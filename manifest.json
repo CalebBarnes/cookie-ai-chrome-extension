@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie AI",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "src/pages/popup/index.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "devtools_page": "src/pages/dev-tools/index.html",
+  "content_scripts": [
+    {
+      "js": ["src/pages/content/index.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["storage"],
+  "background": { "service_worker": "src/pages/background/index.js" }
+}

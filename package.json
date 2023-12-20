@@ -1,0 +1,24 @@
+{
+  "name": "cookie-ai-chrome-ext",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development vite build --watch",
+    "build": "NODE_ENV=production vite build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.246",
+    "@types/node": "^20.6.4",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "hot-reload-extension-vite": "*",
+    "vite": "^4.4.5",
+    "vite-plugin-static-copy": "^0.17.0"
+  }
+}
